@@ -55,14 +55,14 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "abdulrahaman7170@gmail.com",
-      link: "mailto:abdulrahaman7170@gmail.com",
+      value: "sheikhabdulrahaman35@gmail.com",
+      link: "mailto:sheikhabdulrahaman35@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 9591939543",
-      link: "tel:+919591939543",
+      value: "+91 9566049452",
+      link: "tel:+919566049452",
     },
     {
       icon: MapPin,
@@ -73,7 +73,10 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-br from-gray-50 to-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

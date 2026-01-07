@@ -1,8 +1,11 @@
-import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-20">
+    <section
+      id="hero"
+      className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-20"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 space-y-6">
@@ -11,12 +14,15 @@ export default function Hero() {
               <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Abdul Rahaman
               </h1>
-              <p className="text-2xl md:text-3xl text-gray-300">Web Developer II</p>
+              <p className="text-2xl md:text-3xl text-gray-300">
+                Web Developer II
+              </p>
             </div>
 
             <p className="text-lg text-gray-400 leading-relaxed">
-              Experienced React JS developer with 3 years of expertise in crafting dynamic web applications.
-              Demonstrating ability to deliver responsive user interfaces and collaborate effectively in
+              Experienced React JS developer with 3 years of expertise in
+              crafting dynamic web applications. Demonstrating ability to
+              deliver responsive user interfaces and collaborate effectively in
               fast-paced environments.
             </p>
 
@@ -50,7 +56,7 @@ export default function Hero() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://www.linkedin.com/in/abdul-rahaman-028aa9203/"
+                href="https://www.linkedin.com/in/abdul-rahaman-6988113a3/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-gray-700 hover:border-blue-400 rounded-lg transition-colors"
@@ -58,7 +64,7 @@ export default function Hero() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:abdulrahaman7170@gmail.com"
+                href="mailto:sheikhabdulrahaman35@gmail.com"
                 className="p-3 border border-gray-700 hover:border-blue-400 rounded-lg transition-colors"
               >
                 <Mail className="w-5 h-5" />
