@@ -9,24 +9,27 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center space-y-6">
           <div className="flex gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/abdulrahaman12"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-slate-800 hover:bg-blue-600 rounded-lg transition-colors"
+              aria-label="GitHub"
             >
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/abdul-rahaman-028aa9203/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-slate-800 hover:bg-blue-600 rounded-lg transition-colors"
+              aria-label="LinkedIn"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:john@example.com"
+              href="mailto:sheikhabdulrahaman35@gmail.com"
               className="p-3 bg-slate-800 hover:bg-blue-600 rounded-lg transition-colors"
+              aria-label="Email"
             >
               <Mail className="w-6 h-6" />
             </a>

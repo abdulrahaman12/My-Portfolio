@@ -1,37 +1,52 @@
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar } from "lucide-react";
 
 export default function Experience() {
   const experiences = [
     {
-      title: 'Frontend Engineer',
-      company: 'Sandvik Asia Pvt. Ltd.',
-      period: '2024 - Present',
-      description: 'Developing and maintaining dynamic web applications using React JS. Leveraging context API for state management and collaborating with QA and UI/UX teams.',
+      title: "Frontend Engineer",
+      company: "Waveus Networks Pvt Ltd",
+      period: "April 2026 - Present",
+      description:
+        "Developing and enhancing software solutions for 4G/5G Distributed Antenna Systems (DAS) and AIMOS focused on network management, system monitoring, and telecom infrastructure support.",
       achievements: [
-        'Enhanced user experience by 30% with optimized React components',
-        'Improved application performance by 25% through code optimization',
-        'Simplified complex state handling, increasing code maintainability by 40%',
-        'Reduced production bugs by 20% through comprehensive testing collaboration',
-        'Increased user satisfaction by 35% with visually appealing interfaces',
+        "Developed backend modules using C# (.NET EF Core) to process telecom card and system component data.",
+        "Built React.js-based GUI features using JavaScript, HTML, CSS, and Bootstrap for system data visualization and monitoring.",
+        "Integrated SQLite3 for local system data management and visualization support.",
+        "Leveraged generative AI, prompt engineering, and AI agents for code generation, debugging, refactoring, test generation, documentation, and code review.",
       ],
     },
     {
-      title: 'React JS Developer',
-      company: 'Sandvik Asia Pvt. Ltd.',
-      period: '2022 - 2024',
-      description: 'Developed user-facing features using React.js with focus on clean, efficient, and maintainable code. Designed responsive web interfaces meeting UI requirements.',
+      title: "Frontend Engineer",
+      company: "Pinnacle Tangible – BrainwaysTech LLP",
+      period: "February 2025 - March 2026",
+      description:
+        "Developed and maintained a responsive financial services web application for personal, housing, business, vehicle, and MSME loan solutions.",
       achievements: [
-        'Developed clean code resulting in 20% reduction in critical bugs',
-        'Improved application performance by 25% with optimized React components',
-        'Designed responsive interfaces increasing user engagement by 25%',
-        'Integrated frontend components with backend, improving performance by 15%',
-        'Resolved frontend issues quickly, reducing resolution time by 35%',
+        "Designed modular UI components to present loan services, eligibility details, and enquiry workflows in a user-friendly way.",
+        "Integrated REST APIs for dynamic content and lead capture functionality to ensure seamless backend communication.",
+        "Optimized performance, page load speed, cross-browser compatibility, and mobile responsiveness.",
+        "Implemented SEO best practices and structured layouts to improve visibility and engagement.",
+      ],
+    },
+    {
+      title: "Part Costing Application Developer",
+      company: "Sandvik Mining and Rock Technology",
+      period: "March 2023 – January 2025",
+      description:
+        "Developed a product to calculate part and assembly costs using key design and manufacturing inputs and integrated with PLM systems.",
+      achievements: [
+        "Integrated application with Leans and Teamcenter for should-cost display and part design data retrieval.",
+        "Developed core modules for cost estimation, data integration, and reporting for engineering workflows.",
+        "Collaborated with cross-functional teams to ensure accurate cost models and smooth PLM integration.",
       ],
     },
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+    <section
+      id="experience"
+      className="py-20 bg-gradient-to-br from-slate-50 to-gray-100"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -49,10 +64,12 @@ export default function Experience() {
               <div
                 key={index}
                 className={`relative flex flex-col md:flex-row gap-8 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
               >
-                <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
+                <div
+                  className={`md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}
+                >
                   <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div className="flex items-center gap-2 text-blue-600 mb-2">
                       <Calendar className="w-4 h-4" />
@@ -68,7 +85,10 @@ export default function Experience() {
                     <p className="text-gray-700 mb-4">{exp.description}</p>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, i) => (
-                        <li key={i} className="text-gray-600 flex items-start gap-2">
+                        <li
+                          key={i}
+                          className="text-gray-600 flex items-start gap-2"
+                        >
                           <span className="text-blue-500 mt-1">•</span>
                           <span>{achievement}</span>
                         </li>

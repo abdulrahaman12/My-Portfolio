@@ -3,38 +3,41 @@ export default function Skills() {
     {
       category: 'Frontend',
       skills: [
-        { name: 'React.js & Next.js', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'JavaScript (ES6+)', level: 95 },
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'Redux Toolkit & Context API', level: 85 },
-        { name: 'React Hooks', level: 90 },
+        { name: 'React.js', level: 95 },
+        { name: 'Next.js', level: 90 },
+        { name: 'TypeScript', level: 92 },
+        { name: 'JavaScript (ES6+)', level: 96 },
+        { name: 'Tailwind CSS', level: 92 },
+        { name: 'Shadcn/UI', level: 85 },
         { name: 'Bootstrap', level: 85 },
-        { name: 'HTML5 & CSS3', level: 90 },
+        { name: 'HTML5 & CSS3', level: 94 },
+        { name: 'SCSS', level: 80 },
       ],
     },
     {
-      category: 'Backend & Database',
+      category: 'Full Stack & State',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'MySQL', level: 80 },
-        { name: 'MongoDB', level: 80 },
-        { name: '.NET Core', level: 75 },
-        { name: 'REST APIs', level: 90 },
-        { name: 'SQL Server', level: 80 },
+        { name: 'Node.js', level: 88 },
+        { name: 'Express.js', level: 84 },
+        { name: 'C# / .NET EF Core', level: 80 },
+        { name: 'RESTful APIs', level: 94 },
+        { name: 'Redux', level: 86 },
+        { name: 'Redux Toolkit', level: 90 },
+        { name: 'Context API', level: 90 },
+        { name: 'RTK Query', level: 82 },
       ],
     },
     {
       category: 'Tools & Other Skills',
       skills: [
-        { name: 'Git & GitLab', level: 90 },
-        { name: 'Fetch API & Axios', level: 85 },
-        { name: 'Swagger UI', level: 80 },
-        { name: 'SSO Login', level: 90 },
-        { name: 'SASS', level: 85 },
-        { name: 'Azure DevOps', level: 80 },
-        { name: 'JWT Authentication', level: 85 },
-        { name: 'Azure Functions', level: 75 },
+        { name: 'Git / GitLab / Bitbucket', level: 90 },
+        { name: 'SQL Server', level: 80 },
+        { name: 'MySQL', level: 80 },
+        { name: 'Azure DevOps', level: 78 },
+        { name: 'Swagger', level: 82 },
+        { name: 'Postman', level: 88 },
+        { name: 'Jira', level: 80 },
+        { name: 'AI-Assisted Development', level: 90 },
       ],
     },
   ];
@@ -62,7 +65,7 @@ export default function Skills() {
               <div className="space-y-5">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
-                    <div className="flex justify-between mb-2">
+                    <div className="flex justify-between mb-2 gap-4">
                       <span className="font-medium text-gray-700">{skill.name}</span>
                       <span className="text-sm text-gray-500">{skill.level}%</span>
                     </div>

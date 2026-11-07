@@ -1,21 +1,26 @@
-import { Code2, Rocket, Users } from 'lucide-react';
+import { BrainCircuit, Code2, Rocket, Users } from 'lucide-react';
 
 export default function About() {
   const highlights = [
     {
       icon: Code2,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code with React.js best practices',
+      title: 'Scalable Frontend Engineering',
+      description: 'Building responsive React.js and Next.js applications with reusable components, clean architecture, and maintainable code.',
     },
     {
       icon: Rocket,
-      title: 'Performance Driven',
-      description: 'Optimizing applications to improve user experience and reduce load times',
+      title: 'Performance Optimization',
+      description: 'Improving render efficiency, state management, responsiveness, and loading performance for better user experience.',
     },
     {
       icon: Users,
-      title: 'Collaborative',
-      description: 'Working seamlessly with cross-functional teams and QA to deliver quality solutions',
+      title: 'Collaborative Delivery',
+      description: 'Working closely with QA, backend, and UI/UX teams in Agile environments to deliver reliable software.',
+    },
+    {
+      icon: BrainCircuit,
+      title: 'AI-Assisted Development',
+      description: 'Using GitHub Copilot, Windsurf, and AI-driven workflows to accelerate development, debugging, refactoring, and code review.',
     },
   ];
 
@@ -32,17 +37,18 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
-              I'm an experienced React JS developer with 3 years of expertise in crafting dynamic web applications.
-              I have a demonstrated ability to deliver responsive user interfaces and collaborate effectively in
-              fast-paced environments. I'm eager to contribute my skills and drive innovation within dynamic team settings.
+              Frontend Developer with 4.7 years of experience building scalable web applications using
+              React.js, Next.js, and TypeScript. I specialize in creating reusable UI components, integrating
+              REST APIs, and implementing efficient state management with Redux Toolkit and Context API.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              My expertise spans across React.js, Next.js, JavaScript, TypeScript, Node.js, and various backend technologies.
-              I'm constantly learning and staying up-to-date with the latest industry trends to deliver optimal solutions.
+              I have hands-on experience in designing responsive interfaces with Tailwind CSS, HTML5, CSS,
+              and modern JavaScript, along with backend integration using Node.js, Express.js, .NET EF Core,
+              and database systems such as MySQL and SQL Server.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              I'm passionate about creating elegant solutions to complex problems, improving application performance,
-              and working collaboratively with designers, QA teams, and backend developers to ensure smooth integration.
+              I also leverage AI-assisted development tools such as GitHub Copilot and Windsurf to accelerate
+              coding, debugging, refactoring, and code review while maintaining code quality and performance.
             </p>
           </div>
 
@@ -58,9 +64,7 @@ export default function About() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>
                 </div>
               </div>

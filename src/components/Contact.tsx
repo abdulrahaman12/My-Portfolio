@@ -61,13 +61,13 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 9566049452",
-      link: "tel:+919566049452",
+      value: "+91 9591939543",
+      link: "tel:+919591939543",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Bengaluru, India",
+      value: "Bengaluru",
       link: null,
     },
   ];
@@ -89,13 +89,12 @@ export default function Contact() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Info */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Contact Information
             </h3>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              I'm always open to discussing new projects or opportunities.
+              I'm always open to discussing new opportunities, product challenges, and collaborations.
             </p>
 
             <div className="space-y-6">
@@ -105,14 +104,9 @@ export default function Contact() {
                     <info.icon className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      {info.title}
-                    </h4>
+                    <h4 className="font-semibold text-gray-900 mb-1">{info.title}</h4>
                     {info.link ? (
-                      <a
-                        href={info.link}
-                        className="text-gray-600 hover:text-blue-600"
-                      >
+                      <a href={info.link} className="text-gray-600 hover:text-blue-600">
                         {info.value}
                       </a>
                     ) : (
@@ -124,7 +118,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <input
               type="text"
